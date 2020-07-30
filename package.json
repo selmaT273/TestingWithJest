@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/selmaT273/TestingWithJest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/selmaT273/TestingWithJest/issues"
+  },
+  "homepage": "https://github.com/selmaT273/TestingWithJest#readme",
+  "dependencies": {
+    "jest": "^26.2.1"
+  }
+}
