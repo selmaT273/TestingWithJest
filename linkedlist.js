@@ -6,4 +6,8 @@ class LinkedList {
         this.head = null;
         this.tail = null;
     }
+
+    insert(value)
 }
+
+module.exports = LinkedList;
