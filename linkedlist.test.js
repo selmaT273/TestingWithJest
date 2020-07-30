@@ -6,12 +6,21 @@ test('can create node', () => {
     expect(newNode.data).toBe(3);
 });
 
-let newList = new LinkedList();
-newList.insert(4);
-newList.insert(10);
+let newList1 = new LinkedList();
+newList1.insert(4);
+newList1.insert(10);
 test('can insert', () => {
-    expect(newList.tail.data).toBe(4);
-    expect(newList.head.data).toBe(10);
-    expect(newList.head.next.data).toBe(4);
+    expect(newList1.tail.data).toBe(4);
+    expect(newList1.head.data).toBe(10);
+    expect(newList1.head.next.data).toBe(4);
+});
+
+let newList2 = new LinkedList();
+newList2.append(5);
+newList2.append(9);
+newList2.append(6);
+test('can append', () => {
+    expect(newList2.tail.data).toBe(6);
+    expect(newList2.head.data).toBe(5);
 });
 
