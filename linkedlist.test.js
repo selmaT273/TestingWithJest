@@ -24,3 +24,11 @@ test('can append', () => {
     expect(newList2.head.data).toBe(5);
 });
 
+let newList3 = new LinkedList();
+newList3.insert(3);
+newList3.append(8);
+newList3.insert(2);
+test('can append and insert', () => {
+    expect(newList3.head.data).toBe(2);
+    expect(newList3.tail.data).toBe(8);
+});
