@@ -7,7 +7,16 @@ class LinkedList {
         this.tail = null;
     }
 
-    insert(value)
+    insert(value) {
+        this.size += 1;
+        const newNode = new LinkedListNode(value, this.head);
+        this.next = this.head;
+        this.head = newNode;
+        if(!this.tail) {
+            this.tail = newNode;
+        }
+        return this;
+    }
 }
 
 module.exports = LinkedList;
