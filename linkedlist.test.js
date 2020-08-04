@@ -41,3 +41,17 @@ newList4.insert(7);
 test('can keep track of size', () => {
     expect(newList4.size).toBe(4);
 });
+
+let newList5 = new LinkedList();
+newList5.append(2);
+newList5.append(8);
+test('can return true if contains', () => {
+    expect(newList5.contains(2)).toBe(true);
+});
+
+let newList6 = new LinkedList();
+newList6.append(3);
+newList6.append(7);
+test('can return false if does not contain', () => {
+    expect(newList6.contains(4)).toBe(false);
+});
